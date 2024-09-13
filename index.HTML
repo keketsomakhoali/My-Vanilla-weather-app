@@ -5,5 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Vanilla weather app</title>
   </head>
-  <body></body>
+  <body>
+    <form id="search-form">
+      <input
+        type="search"
+        placeholder="Enter a city..."
+        required
+        class="search-input"
+        id="search-input"
+      />
+      <input type="submit" value="search" class="search-button" />
+    </form>
+    <header>
+      <main>
+        <div class="current-weather">
+          <div>
+            <h1>Friday, September 13th 15:44</h1>
+            <h2 class="current-city">Pretoria</h2>
+            <p class="current-details">
+              ☀️<br />
+              30 °C
+            </p>
+          </div>
+        </div>
+      </main>
+    </header>
+  </body>
 </html>
