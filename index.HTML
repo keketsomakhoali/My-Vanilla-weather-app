@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
     <title>My Vanilla weather app</title>
   </head>
   <body>
@@ -25,16 +26,18 @@
         </div>
       </div>
     </main>
-    <form id="search-form">
-      <input
-        type="search"
-        placeholder="Enter a city..."
-        required
-        class="search-input"
-        id="search-input"
-      />
-      <input type="submit" value="search" class="search-button" />
-    </form>
+    <header>
+      <form id="search-form">
+        <input
+          type="search"
+          placeholder="Enter a city..."
+          required
+          class="search-input"
+          id="search-input"
+        />
+        <input type="submit" value="search" class="search-button" />
+      </form>
+    </header>
     <footer>
       This project was coded by
       <a
@@ -54,4 +57,5 @@
       >
     </footer>
   </body>
+  <script src="src/index.js"></script>
 </html>
