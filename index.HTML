@@ -6,20 +6,25 @@
     <title>My Vanilla weather app</title>
   </head>
   <body>
-    <header>
-      <main>
-        <div class="current-weather">
-          <div>
-            <h1>Friday, September 13th 15:44</h1>
-            <h2 class="current-city">Pretoria</h2>
-            <p class="current-details">
-              ☀️<br />
-              30 °C
-            </p>
-          </div>
+    <main>
+      <div class="current-weather">
+        <div>
+          <h1>Friday, September 13th 15:44</h1>
+          <h2 class="current-city">
+            Pretoria <br />
+            <span class="current-details">
+              moderate rain <br />
+              Humidity: <strong>87%</strong>, Wind:
+              <strong>7.2km/h</strong></span
+            >
+          </h2>
+          <p class="current-temp-icon">
+            ☀️ <br class="current-temp" />
+            30 <span class="current-temp-unit">°C</span>
+          </p>
         </div>
-      </main>
-    </header>
+      </div>
+    </main>
     <form id="search-form">
       <input
         type="search"
@@ -30,5 +35,12 @@
       />
       <input type="submit" value="search" class="search-button" />
     </form>
+    <footer>
+      This project was coded by
+      <a
+        href="https://www.shecodes.io/graduates/139452-ntebogeng-faith-makhoali"
+        target="blank"
+      ></a>
+    </footer>
   </body>
 </html>
