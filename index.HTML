@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <title>My Vanilla weather app</title>
   </head>
   <body>
@@ -11,9 +12,9 @@
       <div class="current-weather">
         <div>
           <h1>Friday, September 13th 15:44</h1>
-          <h2 class="current-city">
+          <h2 class="current-city" id="current-city">
             Pretoria <br />
-            <span class="current-details">
+            <span class="current-details" id="current-details">
               moderate rain <br />
               Humidity: <strong>87%</strong>, Wind:
               <strong>7.2km/h</strong></span
