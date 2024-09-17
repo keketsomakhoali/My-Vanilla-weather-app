@@ -21,6 +21,7 @@ function formatDate(date) {
   let minutes = date.getMinutes();
   let hours = date.getHours();
   let day = date.getDay();
+  let monthIndex = date.getMonth();
 
   if (minutes < 10) {
     minutes = `0${minutes}`;
@@ -39,15 +40,28 @@ function formatDate(date) {
     "Friday",
     "Saturday",
   ];
-
+  let months = [
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
   let formattedDay = days[day];
-  return `${formattedDay} ${hours}:${minutes}`;
+  let formattedMonth = months[monthIndex];
+  return `${formattedDay}, ${formattedMonth} ${hours}:${minutes}`;
 }
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-let currentDateELement = document.querySelector("#current-details");
+let currentDateELement = document.querySelector("h1");
 let currentDate = new Date();
 
 currentDateELement.innerHTML = formatDate(currentDate);
