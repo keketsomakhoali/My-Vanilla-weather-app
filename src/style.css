@@ -1,5 +1,5 @@
 body {
-  background: bisque;
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
 }
 a {
   color: rgb(176, 127, 255);
