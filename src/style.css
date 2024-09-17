@@ -8,10 +8,11 @@ a {
   background-color: white;
   width: 75%;
   margin: 50px auto;
-  padding: 25px;
+  padding: 23px;
   border-radius: 6px;
   color: aliceblue;
   border: none;
+  align-items: center;
 }
 .search-button {
   margin-left: 5px;
@@ -19,7 +20,37 @@ a {
   background-color: azure;
   color: #885df1;
   border: none;
-  padding: 23px;
+  padding: 21px;
   line-height: 1;
   border-radius: 5px;
+  align-items: center;
+}
+.button-container {
+  text-align: center;
+  margin-top: 50px;
+}
+main {
+  padding: 30px 0;
+}
+h1 {
+  font-size: 50px;
+  color: antiquewhite;
+  text-align: center;
+}
+h2 {
+  font-size: 50px;
+  color: antiquewhite;
+  text-align: center;
+}
+p {
+  font-size: 50px;
+  color: antiquewhite;
+  text-align: center;
+}
+footer {
+  border-top: 1px solid #f9f7fe;
+  text-align: center;
+  padding-top: 15px;
+
+  color: rgba(39, 33, 66, 0.4);
 }
