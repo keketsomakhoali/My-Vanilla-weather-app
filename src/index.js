@@ -41,6 +41,7 @@ function formatDate(date) {
     "Saturday",
   ];
   let months = [
+    "January",
     "February",
     "March",
     "April",
