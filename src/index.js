@@ -3,12 +3,12 @@ function displayTemperature(response) {
   let temperature = Math.round(response.data.current.temperature.current);
   let cityElement = document.querySelector("#current-city");
   cityElement.innerHTML = response.data.city;
-  temperatureElement.innerHTML = temperature;
+  temperatureElement.innerHTML = Math.round(temperature);
 }
 
 function search(event) {
   event.preventDefault();
-  let searchInputElement = document.querySelector("#search-form");
+  let searchInputElement = document.querySelector("#search-input");
   let city = searchInputElement.value;
 
   let apiKey = "b2a5adcct04b33178913oc335f405433";
