@@ -10,9 +10,11 @@ a {
   margin: 50px auto;
   padding: 23px;
   border-radius: 6px;
-  color: aliceblue;
+  color: black;
   border: none;
   align-items: center;
+  position: relative;
+  z-index: 1;
 }
 .search-button {
   margin-left: 5px;
